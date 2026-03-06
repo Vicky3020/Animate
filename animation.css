@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.box {
+  height: 10rem;
+  aspect-ratio: 1/1;
+  width: 10rem;
+  /* border-radius: 50%; */
+  /* padding: 8rem; */
+  background: black;
+  animation: rotate-animation  2s ease-in-out 3;
+  border-top: 5px solid rgb(0, 255, 0);
+}
+@keyframes rotate-animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
